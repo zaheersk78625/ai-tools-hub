@@ -46,5 +46,23 @@ function searchTools() {
     }
   }
 }
+// ===== TRENDING AI TOOLS =====
+const trendingTools = [
+  { name: "ChatGPT", url: "https://chat.openai.com" },
+  { name: "DALL·E", url: "https://openai.com/dall-e" },
+  { name: "Runway ML", url: "https://runwayml.com" },
+  { name: "MidJourney", url: "https://www.midjourney.com" },
+  { name: "Bard AI", url: "https://bard.google.com/" },
+  { name: "Copilot", url: "https://github.com/features/copilot" }
+];
+
+const trendingList = document.getElementById("trendingList");
+
+trendingTools.forEach(tool => {
+  const li = document.createElement("li");
+  li.innerHTML = `<a href="${tool.url}" target="_blank">${tool.name}</a>`;
+  trendingList.appendChild(li);
+});
+
 
 
