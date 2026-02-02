@@ -63,6 +63,28 @@ trendingTools.forEach(tool => {
   li.innerHTML = `<a href="${tool.url}" target="_blank">${tool.name}</a>`;
   trendingList.appendChild(li);
 });
+function filterTools(category) {
+  const cards = document.querySelectorAll(".card");
+
+  cards.forEach(card => {
+    const cardCategory = card.getAttribute("data-category");
+
+    if (category === "all" || cardCategory === category) {
+      card.classList.remove("hide");
+    } else {
+      card.classList.add("hide");
+    }
+  });
+}
+const categoryButtons = document.querySelectorAll(".categories button");
+
+categoryButtons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    categoryButtons.forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+  });
+});
+
 
 
 
