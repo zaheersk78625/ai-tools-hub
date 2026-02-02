@@ -1,98 +1,120 @@
+/* ===== GLOBAL ===== */
+* {
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background: #f4f4f4;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #020617, #020617);
+  color: #e5e7eb;
+  margin: 0;
+  padding: 0;
 }
 
+/* ===== HEADER ===== */
 header {
-    background: #222;
-    color: white;
-    text-align: center;
-    padding: 20px;
+  background: #020617;
+  border-bottom: 1px solid #1e293b;
+  padding: 20px;
+  text-align: center;
 }
 
-.tools {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 20px;
+header h1 {
+  margin: 0;
+  font-size: 32px;
+  color: #38bdf8;
 }
 
-.card {
-    background: white;
-    width: 250px;
-    margin: 15px;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 0 10px gray;
+header p {
+  color: #94a3b8;
+  margin-top: 6px;
 }
 
-.card a {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px;
-    background: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-.search-box {
-    text-align: center;
-    margin: 20px;
-}
-
-.search-box input {
-    width: 60%;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid gray;
-}
+/* ===== CATEGORY BUTTONS ===== */
 .categories {
-    text-align: center;
-    margin-bottom: 20px;
+  text-align: center;
+  margin: 25px 0;
 }
 
 .categories button {
-    margin: 5px;
-    padding: 8px 15px;
-    border: none;
-    border-radius: 5px;
-    background: #333;
-    color: white;
-    cursor: pointer;
-}
-#darkModeBtn {
-    margin-top: 10px;
-    padding: 8px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    background: #fff;
-    color: #000;
-    font-size: 14px;
+  background: #020617;
+  color: #38bdf8;
+  border: 1px solid #38bdf8;
+  padding: 8px 14px;
+  margin: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
 }
 
-/* 🌙 Dark Mode Styles */
-.dark-mode {
-    background-color: #121212;
-    color: white;
+.categories button:hover {
+  background: #38bdf8;
+  color: #020617;
 }
 
-.dark-mode header {
-    background: #000;
+/* ===== TOOLS GRID ===== */
+.tools {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  padding: 20px;
 }
 
-.dark-mode .card {
-    background: #1e1e1e;
-    color: white;
+/* ===== TOOL CARD ===== */
+.card {
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+  padding: 18px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.dark-mode .card a {
-    background: #0d6efd;
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.25);
 }
 
-.dark-mode .categories button {
-    background: #555;
+.card h2 {
+  color: #38bdf8;
+  margin-bottom: 8px;
+}
+
+.card p {
+  color: #cbd5f5;
+  font-size: 14px;
+}
+
+/* ===== OPEN BUTTON ===== */
+.card a {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 14px;
+  background: #38bdf8;
+  color: #020617;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.card a:hover {
+  background: #0ea5e9;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 15px;
+  color: #64748b;
+  border-top: 1px solid #1e293b;
+  margin-top: 30px;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 24px;
+  }
 }
