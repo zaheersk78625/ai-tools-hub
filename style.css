@@ -227,6 +227,11 @@ footer {
   pointer-events: none;
   position: absolute; /* avoids layout jump */
 }
+.categories button.active {
+  background: #38bdf8;
+  color: #0f172a;
+}
+
 
 
 
