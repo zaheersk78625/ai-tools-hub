@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Tools Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+<button id="darkModeBtn">🌙 Dark Mode</button>
+        <h1>🤖 AI Tools Hub</h1>
+        <p>All Best AI Tools in One Place</p>
+    </header>
+<div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search AI tools...">
+</div>
+
+    <section class="tools">
+        <div class="card">
+            <h2>ChatGPT</h2>
+            <p>AI chatbot for text & coding</p>
+            <a href="https://chat.openai.com" target="_blank">Open Tool</a>
+        </div>
+
+        <div class="card tool">
+            <h2>DALL·E</h2>
+            <p>AI image generator</p>
+            <a href="https://openai.com/dall-e" target="_blank">Open Tool</a>
+        </div>
+<div class="categories">
+    <button onclick="filterTools('all')">All</button>
+    <button onclick="filterTools('text')">Text AI</button>
+    <button onclick="filterTools('image')">Image AI</button>
+    <button onclick="filterTools('video')">Video AI</button>
+</div>
+
+        <div class="card">
+            <h2>Runway ML</h2>
+            <p>AI video editing tool</p>
+            <a href="https://runwayml.com" target="_blank">Open Tool</a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
