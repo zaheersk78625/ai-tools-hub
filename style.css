@@ -180,4 +180,42 @@ footer {
     width: 85%;
   }
 }
+/* ===== TRENDING AI TOOLS ===== */
+.trending {
+  margin: 20px auto;
+  width: 90%;
+  max-width: 600px;
+  text-align: left;
+  background: #0f172a;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.3);
+}
+
+.trending h2 {
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+.trending ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.trending ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid #1e293b;
+  color: #e5e7eb;
+  font-weight: 500;
+}
+
+.trending ul li a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.trending ul li a:hover {
+  text-decoration: underline;
+}
+
 
